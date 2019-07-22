@@ -267,6 +267,7 @@ li{
 .social-media i{
     font-size: 5rem;
     transition: color 650ms;
+    padding: 15px;
 }
 
 .fa-facebook-square:hover{
@@ -279,6 +280,10 @@ li{
 
 .fa-linkedin:hover{
     color: #0e76a8;
+}
+
+.fa-file-pdf-o:hover{
+    color: rgb(180, 25, 25);
 }
 
 /* End About */
