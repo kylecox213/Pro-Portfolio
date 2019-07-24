@@ -17,7 +17,7 @@ html{
 body{
     width: 100%;
     height: 100%;
-    background: url("../images/mountain.jpg") no-repeat center fixed;
+    background: url("../images/abstract.jpg") no-repeat center fixed;
     background-size: cover;
 }
 
@@ -97,6 +97,10 @@ background-color: rgba(255, 255, 255, 0.75);
     margin-right: 5rem;
 }
 
+.img-float-right{
+    float: right;
+}
+
 /* End Reusable */
 
 
@@ -114,7 +118,8 @@ header {
     position: fixed;
     top: -100vh;
     z-index: 50;
-    background-color: #373775;
+    background: url(../images/polygon.jpg);
+    color:  #05ff11;
     border-bottom-right-radius: 100%;
     border-bottom-left-radius: 100%;
     transition: all 650ms cubic-bezier(1,0,0,1);
@@ -141,7 +146,7 @@ li{
 
 .nav-link:hover,
 .nav-link:focus{
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #05ff11, #1621c4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -170,7 +175,7 @@ li{
 }
 
 .bar{
-    background: linear-gradient(to right, #ffe838, #fd57bf);
+    background: linear-gradient(to right, #05ff11, #1621c4);
     width: 100%;
     height: 4px;
     border-radius: .8rem;
@@ -212,7 +217,7 @@ li{
 .landing-text h1{
     font-size: 20rem;
     font-family: 'Bangers', cursive;
-    background: linear-gradient(to top, #ffe838, #fd57bf);
+    background: linear-gradient(to top, #05ff11, #1621c4);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     padding: 1rem;
@@ -265,7 +270,7 @@ li{
 }
 
 .social-media i{
-    font-size: 5rem;
+    font-size: 10rem;
     transition: color 650ms;
     padding: 15px;
 }
@@ -316,15 +321,15 @@ text-align: center;
 .icon-container{
     width: 10rem;
     height: 10rem;
-    border: 3px solid #ffe838;
-    background-color: #fd57bf;
+    border: 3px solid #05ff11;
+    background-color: #1621c4;
     margin-bottom: 2rem;
     display: flex;
     transform: rotate(45deg);
 }
 
 .icon-container i{
-    color: #ffe838;
+    color: #05ff11;
     font-size: 5rem;
     margin: auto;
     transform: rotate(-45deg);
@@ -352,6 +357,7 @@ text-align: center;
 }
 
 .portfolio-description{
+    width: 60%;
 }
 
 .portfolio-description h1{
@@ -388,7 +394,7 @@ text-align: center;
 /*Start Timeine*/
 
 .timeline ul{
-    border-left: 4px solid #ffe838;
+    border-left: 4px solid #05ff11;
     border-radius: .8rem;
     background: rgba(0, 0, 0, 0.05);
     margin: 0 auto;
@@ -438,12 +444,12 @@ text-align: center;
 
 .timeline .date::after{
     content: '';
-    box-shadow: 0 0 0 4px #fd57bf;
+    box-shadow: 0 0 0 4px,  #05ff11;
     border-radius: 100%;
     left: -8rem;
     height: 1.5rem;
     width: 1.5rem;
-    background-color: #313534;
+    background-color: #1621c4;
 }
 
 /*End Timeline*/
@@ -452,7 +458,8 @@ text-align: center;
 
 /*Start Contact*/
 .contact{
-    background-color: #221e3f;
+    background: linear-gradient(to top, #1d1749, #302b46);
+
 }
 
 form{
@@ -471,12 +478,12 @@ textarea{
     padding: 1rem;
     margin-bottom: 5px;
     border: none;
-    outline-color: #fd57bf;
+    outline-color: #05ff11;
 }
 
 input[type="submit"]{
     width: initial;
-    background-color: #fd57bf;
+    background-color: #1621c4;
     color: #eee;
     padding: 1rem 2rem;
     border-radius: .8rem;
@@ -485,8 +492,8 @@ input[type="submit"]{
 }
 
 input[type="submit"]:hover{
-    color: #221e3f;
-    background-color: #ffe838
+    color: #1d1d1d;
+    background-color: #05ff11;
 }
 
 /*End Contact*/
@@ -522,6 +529,7 @@ input[type="submit"]:hover{
 }
 
 .copyright p{
+    color:  #05ff11;
     font-size: 1.4rem;
 }
 /*End Footer*/
@@ -531,13 +539,13 @@ input[type="submit"]:hover{
 
 @keyframes pulse {
     0%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0.99);
+        box-shadow: 0 0 0 0 rgba(72, 255, 0, 0.99);
     }
     70%{ 
-        box-shadow: 0 0 0 2rem rgba(253, 87, 191, 0);
+        box-shadow: 0 0 0 2rem rgba(72, 255, 0, 0);
     }
     100%{
-        box-shadow: 0 0 0 0 rgba(253, 87, 191, 0);
+        box-shadow: 0 0 0 0 rgba(72, 255, 0, 0);
     }
 }
 
@@ -548,7 +556,7 @@ input[type="submit"]:hover{
 
 @media screen and (max-width: 768px) {
     body{
-        background: url("../images/mountain.jpg") no-repeat center fixed;
+        background: url("../images/abstract.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
@@ -594,7 +602,7 @@ input[type="submit"]:hover{
     }
 
     .icon-container i{
-        font-size: 4rem;
+        font-size: 5rem;
     }
 
     .timeline ul{
@@ -613,7 +621,7 @@ input[type="submit"]:hover{
 @media screen and (max-width: 600px) {
 
     body{
-        background: url("../images/mountain.jpg") no-repeat center fixed;
+        background: url("../images/abstract.jpg") no-repeat center fixed;
         background-size: cover;
     }
 
