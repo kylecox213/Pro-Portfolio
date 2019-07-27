@@ -1,9 +1,35 @@
+<?php
+if (isset($_GET['Name'])) {
+$name = trim($_GET["Name"]);
+$email = trim($_GET["Email"]);
+$subject = trim($_GET["Subject"]);
+$message = trim($_GET["Message"]);
+if ($name == "" || $email == "" || $message == ""){
+echo "Please fill in the required fields: Name, Email, Message";
+exit;
+}
+if ($_POST["address"] != ""){
+echo "Bad form input";
+exit;
+}
+$email_body = $email_body='
+Name: '.$name.'
+Email: '.$email.'
+Message: '.$message.'
+';
+echo $email_body;
+// send email
+$to = "creativewalkerz@gmail.com";
+mail($to, $subject, $email_body);
+header("location:submission.php");
+}
+?>
 <!doctype html>
 <html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=no" />
     <title>About | Kyle Cox</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel=“stylesheet” href=“https://use.fontawesome.com/releases/v5.7.2/css/all.css”
@@ -327,7 +353,7 @@
                 <h1>Contact</h1>
                 <h6>Let's work together</h6>
             </div>
-            <form action="mailto:kylecox213@gmail.com" data-aos="fade-up" data-aos-delay="300">
+            <form action="index.php" data-aos="fade-up" data-aos-delay="300">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" placeholder="Enter your name..." required>
                 <label for="email">Email:</label>

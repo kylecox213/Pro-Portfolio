@@ -1,0 +1,1 @@
+<h1>Thanks you for your email submission.</h1>
