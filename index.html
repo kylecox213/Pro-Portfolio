@@ -1,29 +1,4 @@
-<?php
-if (isset($_GET['Name'])) {
-$name = trim($_GET["Name"]);
-$email = trim($_GET["Email"]);
-$subject = trim($_GET["Subject"]);
-$message = trim($_GET["Message"]);
-if ($name == "" || $email == "" || $message == ""){
-echo "Please fill in the required fields: Name, Email, Message";
-exit;
-}
-if ($_POST["address"] != ""){
-echo "Bad form input";
-exit;
-}
-$email_body = $email_body='
-Name: '.$name.'
-Email: '.$email.'
-Message: '.$message.'
-';
-echo $email_body;
-// send email
-$to = "creativewalkerz@gmail.com";
-mail($to, $subject, $email_body);
-header("location:submission.php");
-}
-?>
+
 <!doctype html>
 <html lang="en-us">
 
