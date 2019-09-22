@@ -39,7 +39,7 @@ $(document).ready(function () {
         initial: [0.1, 0.2],
         minSpeed: 0.8,
         noSelect: true,
-        wheelZoom: true
+        wheelZoom: false
     };
 
     window.onload = function () {
