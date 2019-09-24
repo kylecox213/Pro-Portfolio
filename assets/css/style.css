@@ -39,6 +39,11 @@ img{
     width: 60%;
 }
 
+sgv {
+    width: 100%;
+    height: 100%;
+}
+
 /* End Global */
 
 /* Start Reusable */
@@ -97,9 +102,6 @@ background-color: rgba(255, 255, 255, 0.75);
     margin-right: 5rem;
 }
 
-.img-float-right{
-    float: right;
-}
 
 /* End Reusable */
 
@@ -470,8 +472,6 @@ text-align: center;
 /*Start Contact*/
 .contact{
     background: linear-gradient(to top, #17123a, #574e80);
-    
-
 }
 
 form{
@@ -566,8 +566,81 @@ input[type="submit"]:hover{
 
 /*Media Queries*/
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1026px) {
+    svg {
+        display: none;
+    }
+}
 
+@media screen and (min-width: 1026px) {
+    #nameText {
+        display: none;
+    }
+};
+
+
+@media screen and (max-width: 900px) {
+    p {
+        display: block;
+        margin-block-start: 0em;
+        margin-block-end: 1em;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+    }
+    .menu-toggler {
+        top: 1rem;
+        right: 1rem;
+        width: 4rem;
+        height: 3rem;
+    }
+    .landing-text h1 {
+        /* background: linear-gradient(to top, #ffe838, #ff0026); */
+        font-size: 15rem;
+    }
+    .landing-text h6 {
+        font-size: 4rem;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+    .nav-link {
+        font-size: 4.5rem;
+    }
+    .about .container {
+        flex-direction: column;
+    }
+    .about-heading h1 {
+        font-size: 8rem;
+        margin-top: 5rem;
+    }
+    .section-heading {
+        font-size: 3rem;
+    }
+    .about-details .nav-list {
+        flex-direction: initial;
+    }
+    .about-details li {
+        margin: 0 2rem;
+    }
+    .my-skills {
+        display: block;
+    }
+    .icon-container {
+        font-size: 4rem;
+    }
+    .timeline ul {
+        margin: 0 0 0 auto;
+    }
+    .timeline .date::before {
+        left: -22rem;
+        text-shadow: 1px 1px 2px black;
+    }
+    .timeline .date::after {
+        left: -8rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
 
     .landing-text h1{
         font-size: 15rem;
@@ -625,12 +698,12 @@ input[type="submit"]:hover{
     .timeline .date::after{
         left: -5.9rem;
     }
-}
 
 @media screen and (max-width: 600px) {
 
-
-
+    body {
+        background-size: auto auto;
+    }
     .menu-toggler{
         top: 2rem;
         right: 2rem;
@@ -641,7 +714,7 @@ input[type="submit"]:hover{
     }
 
     .landing-text h6{
-        font-size: 1.4rem;
+        font-size: 3rem;
     }
 
     .nav-link{
@@ -649,7 +722,22 @@ input[type="submit"]:hover{
     }
 
     .about .container{
+        /* display: flow-root; */
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    p {
+        display: flex;
+        margin-block-start: 0em;
+        margin-block-end: 1em;
+        margin-inline-start: 63px;
+        margin-inline-end: 50px;
+    }
+
+    .social-media i {
+        font-size: 4rem;
     }
 
     .profile-img{
@@ -676,6 +764,11 @@ input[type="submit"]:hover{
 
     .timeline .date::before{
         font-size: 1.4rem;
+        left: -22rem;
+    }
+
+    .timeline .date::after {
+        left: -8rem;
     }
 
     form{
@@ -685,7 +778,4 @@ input[type="submit"]:hover{
     .up{
         right: 2rem;
     }
-
-
-
 }
