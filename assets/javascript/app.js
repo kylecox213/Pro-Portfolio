@@ -31,7 +31,7 @@ $(document).ready(function () {
 
     let options = {
         textColour: '#05ff11',
-        textHeight: '16',
+        textHeight: '12',
         imageAlign: 'centre',
         shuffleTags: true,
         noMouse: false,
