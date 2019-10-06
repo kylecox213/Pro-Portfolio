@@ -101,10 +101,15 @@
             height: 100vh;
         }
         
-        canvas {
+        #myCanvas {
             padding-left: 0;
             padding-right: 0;
             display: block;
+            position: absolute;
+            left: 400px;
+            top: -25px;
+            width: 700px;
+            height: 900px;
         }
         
         .top-nav {
@@ -682,7 +687,6 @@
                 align-self: center;
                 width: 600px;
                 height: 300px;
-                position: fixed;
             }
             .menu-toggler {
                 top: 2rem;
@@ -776,10 +780,12 @@
                 flex-direction: column;
             }
             #myCanvas {
-                align-self: center;
-                width: 300px;
-                height: 640px;
-                position: fixed;
+                width: 376px;
+                height: 536px;
+                width: 100%vh;
+                position: absolute;
+                left: 1px;
+                top: 80px;
             }
             .timeline .date::before {
                 font-size: 1rem;
