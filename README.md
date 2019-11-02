@@ -1,6 +1,8 @@
 # Student-Portfolio
 This portfolio page is built with custom CSS stylings and animated with (animate-on-scroll) aos.js and (sphere of various skills) tagcanvas.js.
 
+<img src="./assets/images/screenshot.png" alt="Portfolio" title="Portfolio Page Screenshot" width=600 height="auto">
+
 ## Overview
 
 The portfolio page is divided into five sections:
