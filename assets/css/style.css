@@ -14,11 +14,17 @@
         
         body {
             height: 100vh;
-            background-image: url("../images/abstract.jpg");
-            background-position: center center;
+            background-image: url("../images/abstract.jpg") no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 100%;
+            overflow: hidden;
+            /* background-position: center center;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: cover; */
         }
         
         section {
