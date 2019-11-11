@@ -1,5 +1,5 @@
-# Student-Portfolio
-This portfolio page is built with custom CSS stylings and animated with (animate-on-scroll) aos.js and (sphere of various skills) tagcanvas.js.
+# Professional Portfolio
+This portfolio page is built with custom CSS stylings and executes various animations via tagcanvas. The bottom of the page features a form for users to send emails directly to the linked address. 
 
 <img src="./assets/images/screenshot.png" alt="Portfolio" title="Portfolio Page Screenshot" width=600 height="auto">
 
