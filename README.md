@@ -13,11 +13,11 @@ The portfolio page is divided into five sections:
     * Experience
     * Contact
     
-## Nav Bar
+## Navbar
 
 There is a nav bar icon located at the top-right corner of the page. Upon clicking the icon, a nav bar drops down with a the titles of each section of the portfolio. When a section title is clicked, the user is guided to the corresponding section of the student portfolio page via auto-scroll navigation. The user also has the option to click the nav bar icon to exit the nav bar screen.  
     
-    <img src="./assets/images/navbarscreenshot.png" alt="Portfolio" title="Portfolio Page Screenshot" width=600 height="auto">
+    <img src="./assets/images/navbar.png" alt="Portfolio" title="Portfolio Page Screenshot" width=600 height="auto">
 
     
 ### About Me
