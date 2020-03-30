@@ -445,6 +445,8 @@
         
         .contact {
             background: linear-gradient(to top, #17123a, #574e80);
+            padding-top: 140px;
+            padding-bottom: 140px;
         }
         
         form {
