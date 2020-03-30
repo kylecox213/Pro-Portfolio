@@ -385,7 +385,7 @@
         .timeline ul {
             border-left: 4px solid #05ff11;
             border-radius: .8rem;
-            background: rgba(0, 0, 0, .25);
+            background: rgba(0, 0, 0, 0.707);
             margin: 0 auto;
             position: relative;
             padding: 5rem;
@@ -403,7 +403,7 @@
         }
         
         .timeline .date {
-            border-bottom: 1px solid rgba(51, 255, 0, 0.205);
+            border-bottom: 1px solid rgba(240, 225, 16, 0.768);
             margin-bottom: 1rem;
             padding-bottom: 1rem;
             position: relative;
